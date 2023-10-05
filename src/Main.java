@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {1, -9, 11, -22, -8, 9, 20};
+        int[] arr = {1, -9, 11, -22, -8, 9, -20};
 //        System.out.println(findFirst(arr, 9));
 //        System.out.println(findLast(arr, 8));
 //        System.out.println(maxAbs(arr));
@@ -72,7 +72,28 @@ public class Main {
      */
 
     public static int countPositive(int[] arr) {
+        int i = 0;
+        int count = 0;
+        for (; i < arr.length; i++) {
+            if (arr[i] > 0) count++;
+        }
+        return count;
+    }
 
-        return 0;
+    /*
+    Необходимо реализовать метод таким образом, чтобы он возвращал true, если массив arr является палиндромом,
+    то есть справа-налево и наоборот читается одинаково
+
+    Пример 1:
+    arr=[1,-2,-7,4,2,2,5]
+    результат: false
+
+    Пример 2:
+    arr=[1,-2,-7,4,-7,-2,1]
+    результат: true
+    */
+    public static boolean palindrom(int[] arr) {
+
+        return false;
     }
 }
